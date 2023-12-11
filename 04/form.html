@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HomeQuest Real Estate: Card form</title>
+    <link href="style_seller.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Menu  -->
+    <div class="menu">
+        <div class="logout">
+            <a href="logout.php">Logout</a>
+        </div>
+        <div class="home">
+            <a href="index.php">Home</a>
+        </div>
+    </div>
+    <div class="topnav">
+        <h3>Dashboard</h3>
+    </div>
+    <div class="container">
+        <h1>Create Your Card</h1>
+        <form method="post" action="insert_card.php" enctype="multipart/form-data">
+            <label for="address">Address of the Property?</label>
+            <input type="text" id="address" name="address">
+
+            <label for="age">How Hold is the Property?</label>
+            <input type="text" id="age" name="age">
+
+            <label for="bed">Number of Beds in the Property?</label>
+            <input type="text" id="bed" name="bed">
+
+            <label for="ad">Number of Bathrooms in the Property?</label>
+            <input type="text" id="ad" name="ad">
+
+            <label for="garden">Is Garden available?</label>
+            <input type="text" id="garden" name="garden">
+
+            <label for="pa">Is Parking Available?</label>
+            <input type="text" id="pa" name="pa">
+
+            <label for="tax">Price of the Property?</label>
+            <input type="text" id="tax" name="tax">
+
+            <label for="image">Image of the Property</label>
+            <input type="file" name="file">
+
+            <input type="submit" id="submitbtn" value="Create Card">
+        </form>
+    </div>
+</body>
+
+</html>
